@@ -27,4 +27,11 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['username', 'email', 'first_name', 'last_name']
 
+from datetime import date
+def validate_due_date(self, value):
+    if value and value < date.today():
+        raise serializers.ValidationError("Due date cannot be in the past")
+    return value
+
+
 
