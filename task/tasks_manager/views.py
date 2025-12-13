@@ -10,5 +10,17 @@ class TaskListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return Task.objects.filter(user=self.request.user)
 
+class HelloView(LoginRequiredMixin, ListView):
+    template_name = 'tasks/hello.html'
 
-# Create your views here.
+class WelcomeView(LoginRequiredMixin, ListView):
+    template_name = 'tasks/welcome.html'
+
+def home(request):
+    return render(request, 'tasks/home.html')
+
+    
+
+
+
+
