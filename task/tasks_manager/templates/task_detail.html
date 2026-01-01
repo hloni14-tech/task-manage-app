@@ -1,7 +1,0 @@
-<h2>{{ task.title }}</h2>
-<p>{{ task.description }}</p>
-<p>Status: {{ task.status }}</p>
-
-<a href="{%url 'task_update' task.pk %}">Edit</a>
-<a href="{%url 'task_delete' task.pk %}">Delete</a>
-<a href="{url 'task_list'}">Back</a>
