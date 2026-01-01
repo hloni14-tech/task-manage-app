@@ -18,6 +18,27 @@ The languages I used are:
 * Git & GitHub
 * PythonAnywhere (for Deployment)
 
+The authentications:
+* Users must be authenticated to create, update, or delete tasks
+* Token-based authentication is used
+
+Where the project is deployed:
+The project is deployed on PythonAnywhere.
+
+Live URL: https://hlox375.pythonanywhere.com
+
+The challenges I came across:
+* Handling authentication errors
+* Configuring deployment on PythonAnywhere
+
+The solutions:
+* Used Django REST Framework permissions
+* Configured WSGI and static files properly
+
+
+
+
+
 
 
 
