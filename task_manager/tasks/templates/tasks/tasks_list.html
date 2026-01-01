@@ -1,0 +1,13 @@
+<h1>My Tasks</h1>
+<a href="{% url 'task_create' %}">Add Task</a>
+<a href="{% url 'logout' %}">Logout</a>
+
+<ul>
+  {% for task in tasks %}
+    <li>
+      {{ task.title }} - {{ task.status }}
+      <a href="{% url 'task_update' task.id %}">Edit</a>
+      <a href="{% url 'task_delete' task.id %}">Delete</a>
+    </li>
+  {% endfor %}
+</ul>
