@@ -25,7 +25,7 @@ The authentications:
 Where the project is deployed:
 The project is deployed on PythonAnywhere.
 
-Live URL: https://hlox375.pythonanywhere.com
+Live URL: https://hlox375.pythonanywhere.com/admin
 
 The challenges I came across:
 * Handling authentication errors
